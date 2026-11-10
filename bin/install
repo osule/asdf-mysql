@@ -82,7 +82,7 @@ install_MySQL() {
   # Help
   echo "Successfully installed MySQL ${MYSQL_VERSION}"
   echo "To initialize a new database:"
-  echo "  asdf global mysql ${MYSQL_VERSION}"
+  echo "  asdf set -u mysql ${MYSQL_VERSION}"
   #echo "  export DATADIR=/path/to/data"
   case "$MAJOR" in
     5)

@@ -17,7 +17,7 @@ get_mysql_records() {
     ARCH="[^\"]*"
   fi
 
-  curl -s https://raw.githubusercontent.com/datacharmer/dbdeployer/master/downloads/tarball_list.json |
+  curl -s https://raw.githubusercontent.com/ProxySQL/dbdeployer/master/downloads/tarball_list.json |
   tr '\n' ' ' |
   tr '{}' '\n\n' |
   grep -e "\"OS\": *\"$OS\"" |
